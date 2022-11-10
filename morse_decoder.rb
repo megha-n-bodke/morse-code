@@ -27,9 +27,21 @@
   '--..' => 'Z'
 }
 
-def get_letter(_letter)
-  current = @dictionary[key]
-  print "current letter is #{current}"
+
+def get_letter(letter)
+  current = @dictionary[letter]
+  #print "current letter is #{current}"
 end
 
-get_letter('.-')
+def get_word(word)
+    @characters = word.split
+    @str = ""
+    @characters.each do|letter|
+        get_letter(letter)
+        @str += get_letter(letter)
+    end
+    puts @str
+end
+
+#get_letter('.-')
+get_word('.- .-')
