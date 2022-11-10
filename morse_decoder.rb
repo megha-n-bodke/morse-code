@@ -34,14 +34,15 @@ def get_letter(letter)
 end
 
 def get_word(word)
-    @characters = word.split
+  @characters = word.split
     @str = ""
     @characters.each do|letter|
-        get_letter(letter)
-        @str += get_letter(letter)
-    end
-    puts @str
+    get_letter(letter)
+    @str += get_letter(letter)
+  end
+  puts @str
 end
 
-#get_letter('.-')
-get_word('.- .-')
+
+
+
