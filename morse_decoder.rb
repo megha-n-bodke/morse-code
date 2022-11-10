@@ -33,3 +33,13 @@ def get_letter(_letter)
 end
 
 get_letter('.-')
+
+def decode_morse(morse_code)
+  @words = morse_code.split('   ')
+  @words.each do |word|
+    get_word(word)
+  end
+end
+# get_letter('.-')
+get_word('.- .- -..')
+decode_morse('.... . -.--   .--- ..- -.. .')
